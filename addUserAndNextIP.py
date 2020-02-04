@@ -347,7 +347,7 @@ userName = custID + realm
 manIP = getNextManIP(sharedNetwork)
 print manIP, realm, sharedNetwork, custID  + " " +  userName
 school = yes_or_no("Is this a school?")
-print manIP
+#print manIP
 if school == True:
 	print "Calling generateSchoolConfig"
 	generateSchoolConfig(sharedNetwork,manIP,custID)
@@ -359,7 +359,7 @@ password=pass_generator()
 siteName=generateResidentialConfig(sharedNetwork,manIP,userName,password)
 updateRadiusResidential(custID,userName,password,manIP,publicIP)
 updateIpam(publicIP)
-print "Config paramters are" , userName,password,manIP,publicIP,siteName
+#print "Config paramters are" , userName,password,manIP,publicIP,siteName
 print
 print
 #readBack(userName,publicIP)
